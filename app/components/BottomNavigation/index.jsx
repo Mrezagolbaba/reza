@@ -1,6 +1,5 @@
 import clsx from 'clsx'
 import { Home, Briefcase, GraduationCap, Activity, Mail } from 'lucide-react'
-
 const BottomNavigation = ({ activeSection, onSectionChange }) => {
   const navigation = [
     { name: "About", href: "about", icon: Home },
@@ -20,21 +19,21 @@ const BottomNavigation = ({ activeSection, onSectionChange }) => {
 
   return (
     <div className="fixed bottom-4 left-0 right-0 flex justify-center w-full z-50 px-4">
-      <nav className="bg-white/80 dark:bg-black/80 rounded-full shadow-lg backdrop-blur-sm border border-gray-200 dark:border-zinc-800">
-        <ul className="flex items-center">
-          {navigation.map((item) => {
-            const Icon = item.icon
-            return (
-              <li key={item.name}>
-                <button
-                  onClick={() => handleNavigation(item)}
-                  className={clsx(
-                    "relative group flex items-center justify-center",
-                    "px-3 py-4 md:px-8 md:py-4",
-                    "transition-colors hover:text-orange-500"
-                  )}
-                >
-                  {/* Icon only for mobile */}
+      <nav className="bg-gray/80 dark:bg-black/80 rounded-full shadow-lg px-8 py-4 backdrop-blur-sm border border-gray-200 dark:border-zinc-800">
+        <ul className="flex items-center gap-8">
+          {navigation.map((item) =>  {
+             const Icon = item.icon
+             return (
+            <li key={item.name}>
+              <button
+                onClick={() => handleNavigation(item)}
+                className={clsx(
+                  "relative px-3 py-1.5 text-sm font-medium transition-colors hover:text-orange-500",
+                  activeSection === item.href
+                    ? "text-orange-500"
+                    : "text-black dark:text-zinc-400"
+                )}
+              >
                   <Icon 
                     className={clsx(
                       "w-6 h-6 md:hidden",
@@ -43,8 +42,6 @@ const BottomNavigation = ({ activeSection, onSectionChange }) => {
                         : "text-gray-600 dark:text-zinc-400"
                     )}
                   />
-                  
-                  {/* Text only for desktop */}
                   <span 
                     className={clsx(
                       "hidden md:block text-sm font-medium",
@@ -55,16 +52,12 @@ const BottomNavigation = ({ activeSection, onSectionChange }) => {
                   >
                     {item.name}
                   </span>
-
-                  {/* Simple underline for active state */}
-                  {activeSection === item.href && (
-                    <span className={clsx(
-                     "absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-orange-500/0 via-orange-500/70 to-orange-500/0" 
-                    )} />
-                  )}
-                </button>
-              </li>
-            )
+                {activeSection === item.href && (
+                  <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-orange-500/0 via-orange-500/70 to-orange-500/0" />
+                )}
+              </button>
+            </li>
+          )
           })}
         </ul>
       </nav>
