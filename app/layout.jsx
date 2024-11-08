@@ -1,4 +1,4 @@
-// app/layout.jsx
+export const runtime = 'edge';
 import localFont from "next/font/local";
 import "./globals.css";
 import clsx from "clsx";
