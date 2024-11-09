@@ -30,7 +30,7 @@ const RecentProjects = ({ id }) => {
     ]
 
     return (
-        <section id={id} className="min-h-screen">
+        <section id={id} className="min-h-screen w-full flex items-center">
         <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}

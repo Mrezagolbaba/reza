@@ -8,7 +8,7 @@ const BottomNavigation = ({ activeSection, onSectionChange }) => {
   const navigation = [
     { name: "About", href: "about", icon: Home },
     { name: "Experience", href: "experience", icon: Briefcase },
-    { name: "Project", href: "project", icon: Briefcase },
+    { name: "Projects", href: "project", icon: Briefcase },
     { name: "Education", href: "education", icon: GraduationCap },
     { name: "Activity", href: "activity", icon: Activity },
     { name: "Contact", href: "contact", icon: Mail }
