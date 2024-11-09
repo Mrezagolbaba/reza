@@ -93,7 +93,7 @@ const ExperienceSection = ({ id }) => {
                   </div>
                 </div>
 
-                <div className="flex flex-wrap gap-2">
+                {/* <div className="flex flex-wrap gap-2">
                   {exp.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
@@ -102,12 +102,8 @@ const ExperienceSection = ({ id }) => {
                       {tech.name}
                     </span>
                   ))}
-                </div>
+                </div> */}
               </div>
-              
-              {index < experiences.length - 1 && (
-                <div className="absolute left-0 w-px h-8 bg-gray-200 dark:bg-gray-700 -bottom-4"></div>
-              )}
             </motion.div>
           ))}
         </div>

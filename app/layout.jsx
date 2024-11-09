@@ -2,6 +2,8 @@ export const runtime = 'edge';
 import localFont from "next/font/local";
 import "./globals.css";
 import clsx from "clsx";
+import { ThemeProvider } from 'next-themes'
+import { useTheme } from 'next-themes'
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -23,17 +25,19 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark">
-      <body className={clsx(
-        geistSans.variable,
-        geistMono.variable,
-        "min-h-screen font-sans antialiased",
-        "bg-white dark:bg-black",
-        "grid-background-light dark:grid-background"
-      )}>
-        <main className="min-h-screen pb-24 sppotlight-overlay-light dark:spotlight-overlay">
-          {children}
-        </main>
-      </body>
+      <ThemeProvider attribute="class">
+        <body className={clsx(
+          geistSans.variable,
+          geistMono.variable,
+          "min-h-screen font-sans antialiased",
+          "bg-white dark:bg-black",
+          " grid-background "
+        )}>
+          <main className="min-h-screen pb-24 sppotlight-overlay-light dark:spotlight-overlay">
+            {children}
+          </main>
+        </body>
+      </ThemeProvider>
     </html>
   )
 }

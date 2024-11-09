@@ -7,6 +7,7 @@ import ExperienceSection from "../app/components/Experience";
 import ActivitySection from "../app/components/Activity";
 import EducationSection from "../app/components/Education";
 import AboutSection from "../app/components/About";
+import RecentProjects from "../app/components/RecentProjects";
 
 
 export default function Home() {
@@ -37,7 +38,7 @@ export default function Home() {
       <main className="container mx-auto px-4 pt-24 pb-12">
         <AboutSection id="about" />
         <ExperienceSection id="experience" />
-
+        <RecentProjects id="project" />
        <EducationSection id="education" />
 
        <ActivitySection id="activity" />
