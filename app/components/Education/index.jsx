@@ -13,8 +13,15 @@ const EducationSection = ({id}) => {
                 <div className="flex items-baseline space-x-2">
                     <ChevronRight className="text-primary" />
                     <div>
-                        <h4 className="text-xl font-medium dark:text-gray-500">BSc in Computer Science</h4>
-                        <p className="text-muted-foreground dark:text-gray-500">University of Technology, 2014 - 2018</p>
+                        <h4 className="text-xl font-medium dark:text-gray-500">MSc in Electronic and Computer Engineering</h4>
+                        <p className="text-muted-foreground dark:text-gray-500">University of Qazvin, 2012 - 2015</p>
+                    </div>
+                </div>
+                <div className="flex items-baseline space-x-2">
+                    <ChevronRight className="text-primary" />
+                    <div>
+                        <h4 className="text-xl font-medium dark:text-gray-500">BSc in Electronic Engineering </h4>
+                        <p className="text-muted-foreground dark:text-gray-500">University of Qazvin, 2010 - 2012</p>
                     </div>
                 </div>
             </motion.div>
