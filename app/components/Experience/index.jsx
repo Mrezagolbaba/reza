@@ -3,19 +3,22 @@ import { motion } from 'framer-motion'
 const ExperienceSection = ({ id }) => {
   const experiences = [
     {
-      title: "Lead Front-end Developer",
-      company: "Extratik",
+      title: "Fullstack Developer",
+      company: "Tribes",
       location: "Tallinn, Estonia",
       period: "2023 – present",
       isPresent: true,
       technologies: [
         { name: "React", type: "frontend" },
         { name: "Next.js", type: "frontend" },
+        { name: "Node.js", type: "backend" },
+        { name: "PostgreSQL", type: "database" },
         { name: "TypeScript", type: "language" },
         { name: "Tailwind", type: "styling" },
         { name: "Redux", type: "state" },
         { name: "GraphQL", type: "api" },
-        { name: "Jest", type: "testing" }
+        { name: "Jest", type: "testing" },
+       
       ]
     },
     {
