@@ -20,7 +20,7 @@ const AboutSection = ({
         <motion.img
           src={avatarUrl}
           alt=""
-          className="w-24 h-24 rounded-full"
+          className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full object-cover"
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.6 }}
         />
