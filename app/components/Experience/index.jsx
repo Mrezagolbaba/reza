@@ -3,9 +3,9 @@ import { motion } from 'framer-motion'
 const ExperienceSection = ({ id }) => {
   const experiences = [
     {
-      title: "Fullstack Developer",
+      title: "Software Engineer",
       company: "Tribes",
-      location: "Tallinn, Estonia",
+      location: "London, Untited Kingdom (remote)",
       period: "2023 – present",
       isPresent: true,
       technologies: [
@@ -24,7 +24,7 @@ const ExperienceSection = ({ id }) => {
     {
       title: "Senior Frontend Developer",
       company: "PWC",
-      location: "Tallinn, Estonia",
+      location: "Prague, Czech Republic (remote)",
       period: "2021 – 2023",
       technologies: [
         { name: "React", type: "frontend" },
@@ -38,7 +38,7 @@ const ExperienceSection = ({ id }) => {
     {
       title: "Lead Front-end Developer",
       company: "Rental Track Pro",
-      location: "Tallinn, Estonia",
+      location: "California, USA (remote)",
       period: "2020 – 2021",
       technologies: [
         { name: "React", type: "frontend" },
@@ -51,7 +51,7 @@ const ExperienceSection = ({ id }) => {
     {
       title: "Full-stack Developer",
       company: "Goki",
-      location: "Sydney, Australia",
+      location: "Sydney, Australia (remote)",
       period: "2016 – 2020",
       technologies: [
         { name: "React Native", type: "mobile" },
