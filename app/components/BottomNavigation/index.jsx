@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import { Home, Briefcase, GraduationCap, Activity, Mail, Sun, Moon } from 'lucide-react'
+import { Home, Briefcase, GraduationCap, Activity, Mail, Sun, Moon,Newspaper } from 'lucide-react'
 import { useTheme } from 'next-themes' 
 
 const BottomNavigation = ({ activeSection, onSectionChange }) => {
@@ -9,6 +9,7 @@ const BottomNavigation = ({ activeSection, onSectionChange }) => {
     { name: "About", href: "about", icon: Home },
     { name: "Experience", href: "experience", icon: Briefcase },
     { name: "Projects", href: "project", icon: Briefcase },
+    { name: "Articles", href: "articles", icon: Newspaper },
     { name: "Education", href: "education", icon: GraduationCap },
     { name: "Activity", href: "activity", icon: Activity },
     { name: "Contact", href: "contact", icon: Mail }

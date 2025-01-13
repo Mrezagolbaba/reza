@@ -8,6 +8,7 @@ import ActivitySection from "../app/components/Activity";
 import EducationSection from "../app/components/Education";
 import AboutSection from "../app/components/About";
 import RecentProjects from "../app/components/RecentProjects";
+import ArticlesSection from "./components/LastArticles";
 
 
 export default function Home() {
@@ -39,6 +40,7 @@ export default function Home() {
         <AboutSection id="about" />
         <ExperienceSection id="experience" />
         <RecentProjects id="project" />
+        <ArticlesSection id="articles" />
        <EducationSection id="education" />
 
        <ActivitySection id="activity" />
